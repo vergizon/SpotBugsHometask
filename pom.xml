@@ -34,17 +34,13 @@
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>4.4.2.2</version>
-                <configuration>
-                    <includeFilterFile>spotbugs-security-include.xml</includeFilterFile>
-                    <excludeFilterFile>spotbugs-security-exclude.xml</excludeFilterFile>
-                    <plugins>
-                        <plugin>
-                            <groupId>com.h3xstream.findsecbugs</groupId>
-                            <artifactId>findsecbugs-plugin</artifactId>
-                            <version>1.10.1</version>
-                        </plugin>
-                    </plugins>
-                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs</artifactId>
+                        <version>4.5.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
 
