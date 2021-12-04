@@ -57,8 +57,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn spotbugs:check" />
       <command value="mvn compile site" />
+      <command value="mvn spotbugs:check" />
     </option>
   </component>
   <component name="RunManager">

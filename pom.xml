@@ -41,6 +41,15 @@
                         <version>4.5.0</version>
                     </dependency>
                 </dependencies>
+                <executions>
+                    <execution>
+                        <id>check</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
 
